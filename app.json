@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Ledgerio",
+    "slug": "ledgerly",
+    "version": "1.0.22",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/StartPage.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F172A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sinemkarakurt777.ledgerio",
+      "buildNumber": "22",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Fişlerinizi tarayarak harcamalarınızı otomatik kaydetmek için kameraya erişim gerekiyor.",
+        "NSPhotoLibraryUsageDescription": "Galerinizden fiş fotoğrafı seçerek harcamalarınızı kaydetmek için izin gerekiyor.",
+        "NSPhotoLibraryAddUsageDescription": "Çekilen fiş fotoğraflarını galerinize kaydetmek için izin gerekiyor."
+      }
+    },
+    "android": {
+      "package": "com.sinemkarakurt777.ledgerio",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.INTERNET",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Fişlerinizi tarayarak harcamalarınızı otomatik kaydetmek için kameraya erişim gerekiyor.",
+          "photosPermission": "Galerinizden fiş fotoğrafı seçerek harcamalarınızı kaydetmek için izin gerekiyor."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "edb7690d-5fdc-4f42-941e-052d104671e8"
+      }
+    }
+  }
+}
